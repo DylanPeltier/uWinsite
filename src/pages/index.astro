@@ -1,0 +1,79 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Navbar from "../components/Navbar.astro";
+import SmallCard from "../components/SmallCard.astro";
+---
+
+<Layout title="Welcome to Astro.">
+	<div class="main-container">
+		<Navbar />
+		<div class="card-container">
+			<div class="top-cards">
+				<SmallCard icon="fa-solid:money-check-alt" titleOne="Financial" titleTwo="Account" />
+				<SmallCard icon="fa-solid:money-check-alt" titleOne="Financial" titleTwo="Account" />
+				<SmallCard icon="fa-solid:money-check-alt" titleOne="Financial" titleTwo="Account" />
+			</div>
+			<div class="middle-cards">
+				<SmallCard icon="fa-solid:money-check-alt" titleOne="Financial" titleTwo="Account" />
+				<SmallCard icon="fa-solid:money-check-alt" titleOne="Financial" titleTwo="Account" />
+				<SmallCard icon="fa-solid:money-check-alt" titleOne="Financial" titleTwo="Account" />
+			</div>
+			<div class="bottom-cards">
+				<SmallCard icon="fa-solid:money-check-alt" titleOne="Financial" titleTwo="Account" />
+				<SmallCard icon="fa-solid:money-check-alt" titleOne="Financial" titleTwo="Account" />
+				<SmallCard icon="fa-solid:money-check-alt" titleOne="Financial" titleTwo="Account" />
+			</div>
+		</div>
+	</div>
+</Layout>
+
+<style>
+	.main-container {
+		width: 100%;
+		height: 100vh;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	.card-container {
+		width: auto;
+		height: 100%;
+		background: none;
+		margin-right: 100px;
+		margin-left: 100px;
+		margin-top: 50px;
+		margin-bottom: 50px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	.top-cards {
+		display: flex;
+		height: 100%;
+		width: 100%;
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.middle-cards {
+		display: flex;
+		height: 100%;
+		width: 100%;
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.bottom-cards {
+		display: flex;
+		height: 100%;
+		width: 100%;
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
+	}
+</style>
